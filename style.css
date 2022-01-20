@@ -1,0 +1,393 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.adjacent {
+    float:left;
+}
+
+.center {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.gradient {
+    background-image: linear-gradient(to bottom right, #9ce9ff, #fff0fd);
+}
+
+.light-blue {
+    background-color: #d9feff;
+}
+
+.dark-blue {
+    background-color: #1d587a;
+}
+
+
+/* .navbar {
+    height: 100px;
+} */
+
+.black-text {
+    color: black
+}
+
+.white-text {
+    color: white
+}
+
+.massive {
+    font-size: xx-large;
+}
+
+.massive2 {
+    font-size: 60;
+    font-weight: lighter;
+}
+
+.extra-big {
+    font-size: x-large;
+}
+
+.big {
+    font-size: large;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.spacing {
+    margin: 50px;
+}
+
+.spacing2 {
+    padding: 50px;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.right {
+    justify-content: end;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.p-horizontal {
+    display:flex; 
+    flex-direction: row;
+}
+
+.align-bottom {
+    /* position: absolute;
+    bottom: 0; */
+    margin-top: auto;
+}
+
+/* #contacts-and-resume {
+    height: 500;
+} */
+
+#contacts {
+    height: 400px;
+    width: 600px;
+    min-width: 400px;
+}
+
+.resume {
+    overflow: hidden;
+    width: 600px;
+    min-width: 400px;
+}
+
+/* shrink resume and contacts as screen shrinks */
+@media only screen and (max-width: 1300px) {
+    .resume, #contacts {
+        width: 500px;
+    }
+}
+
+/* shrink resume and contacts as screen shrinks */
+@media only screen and (max-width: 1050px) {
+    .resume, #contacts {
+        width:80%;
+    }
+    #contacts {
+        margin-bottom: 40px;
+    }
+}
+
+
+#pfp {
+    border-radius: 100%
+}
+
+/* position bio under pfp when screen shrinks */
+@media only screen and (max-width: 800px) {
+    #bio {
+        display: block;
+        /* justify-content: center;
+        align-items: center;  */
+    }
+
+    #pfp {
+        border-radius: 100%;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+        margin-bottom: 30px;
+        display: block;
+    }
+}
+
+.drop-shadow {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#filter-container2 {
+    margin: 100px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    
+    /* width: 70%; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    #filter-container2 {
+        margin: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.filter2 {
+    border-radius: 4px;
+    margin: 5px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 20px;
+    display:inline-block;
+    line-height: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.filter2:hover {
+    background-color: #43d6ff;
+    color: white;
+}
+
+/* Add a dark background to the active button */
+.filter2.active2 {
+    background-color: #43d6ff;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.project {
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    max-width: 590px;
+    min-width: 570px;
+    height: 350px;
+    display:inline-block;
+    border-radius: 15px;
+    vertical-align: top;
+    margin: 10;
+    flex: 1;
+    align-self: baseline;
+    /* Hidden by default, js makes it visible, filter butttons */
+    display: none;
+
+    /* this is for positioning the icons */
+    position: relative;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display:inline-block;
+    /* display: inherit; */
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+/* float: left; */
+
+#projects-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+@media only screen and (max-width: 1300px) {
+    #projects-holder {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .project{
+        -webkit-transform:scale(0.8);
+        -moz-transform:scale(0.8);
+        -ms-transform:scale(0.8);
+        transform:scale(0.8);
+        margin: 0;
+        /* flex-shrink: 0.5; */
+    }
+
+    #projects-holder {
+        display: auto
+    }
+}
+
+.double {
+    height: 700px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 25px;
+}
+
+.leading {
+    line-height: 1.8;
+}
+
+.big-leading {
+    line-height: 4;
+}
+
+.image-container {
+    position: relative;
+    width: 190;
+}
+
+.slide {
+    display: none;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.faded-text {
+    color: rgb(192, 192, 192)
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -20;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: -20;
+}
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blocks {
+    display:inline-block;
+}
+
+.block {
+    display:inline-block;
+}
+
+.block-margin {
+    margin: 10px;
+}
+
+.left {
+    float: left;
+}
+
+iframe {
+    border-style: none;
+}
+
+.evenly-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vertical-middle {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center; 
+}
+
+.table {
+    display: table;
+    /* height: 100%; */
+}
+
+.element {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon,
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+/* @media (max-width: 100px) {
+    .contacts .banner_block{
+       max-width:50% !important;
+  }
+} */
+
+.glow :hover {
+    /* box-shadow: 0 5px 15px rgba(62, 168, 255, 0.8); */
+    /* outline-style: solid; */
+    /* filter: drop-shadow(0px 0px 10px rgba(79, 190, 255, 0.8)); */
+    box-shadow: 0 8px 16px 0 rgba(79, 190, 255, 0.8), 0 6px 20px 0 rgba(79,190,255,0.7);
+}
+
+/* style="justify-content: space-between;" */
